@@ -54,6 +54,7 @@ function setupScenes(){
   $('#envelope').addEventListener('click',openEnvelope);
   $('#queenButton').addEventListener('click',openQueen);
   $('#albumInvite').addEventListener('click',openAlbum);
+  $('#rotationHint').addEventListener('click',openAlbum);
   $('#album').addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#album').classList.contains('closed'))closeAlbum()});
 }
 function photoDiv(src){const d=document.createElement('div');d.className='revealed-photo';d.style.backgroundImage=`url('${src}')`;return d}
